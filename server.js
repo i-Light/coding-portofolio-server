@@ -9,7 +9,6 @@ const server = createServer(app);
 const io = new Server(server);
 
 // app.use(cors());
-// app.use(express.static('public'));
 
 io.on('connection', (socket) => {
   console.log("connected");
