@@ -8,6 +8,9 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
+app.use((req,res)=>{
+  res.send("hello")
+})
 // app.use(cors());
 
 io.on('connection', (socket) => {
